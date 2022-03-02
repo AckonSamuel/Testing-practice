@@ -9,4 +9,6 @@ const reverseStr = str => str.split('').reverse().join('');
         divide= (a, b) => a / b;
     }
 
-module.exports = {characterCount, reverseStr, calculator};
+const capitalizeStr = str => str[0].toUpperCase() + str.slice(1);
+console.log(capitalizeStr('mommy'));
+module.exports = {characterCount, reverseStr, calculator, capitalizeStr};
