@@ -9,4 +9,4 @@ const reverseStr = str => str.split('').reverse().join('');
         divide= (a, b) => a / b;
     }
 
-module.exports = {characterCount, reverseStr};
+module.exports = {characterCount, reverseStr, calculator};

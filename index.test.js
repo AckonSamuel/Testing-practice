@@ -17,4 +17,25 @@ test('Character count is', () => {
 
 test('string is reversed', () => {
     expect(modules.reverseStr("Amen")).toBe("nemA");
-})
+});
+
+describe('calculator', () => {
+
+    const act = new modules.calculator;
+    test('adds accurately', () => {
+        expect(act.add(5, 2)).toBe(7);
+    });
+
+    test('subtracts accurately', () => {
+        expect(act.subtract(5, 2)).toBe(3);
+    });
+
+    test('multiplies accurately', () => {
+        expect(act.multiply(5, 2)).toBe(10);
+    });
+
+    test('divides accurately', () => {
+        expect(act.divide(10, 2)).toBe(5);
+    });
+
+});
