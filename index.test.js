@@ -1,7 +1,7 @@
 const modules = require('./index.js');
 
 
-
+describe('character count', () => {
 test('string lenght is less than or equal to 10', () => {
     expect(modules.characterCount('Microverse')).toBeLessThanOrEqual(10);
 })
@@ -17,6 +17,7 @@ test('Character count is', () => {
 
 test('string is reversed', () => {
     expect(modules.reverseStr("Amen")).toBe("nemA");
+});
 });
 
 describe('calculator', () => {
@@ -38,4 +39,10 @@ describe('calculator', () => {
         expect(act.divide(10, 2)).toBe(5);
     });
 
+});
+
+describe('capitalizeStr', () => {
+    test('capitalizeStr', () => {
+        expect(modules.capitalizeStr('mommy')).toBe('Mommy');
+    });
 });
